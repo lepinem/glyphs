@@ -13,7 +13,7 @@ const restaurantSchema = new Schema({
     street: String,
     city: String,
     state: String,
-    postal: String
+    zip: Number
   },
   password: { type: String, required: true }
 });

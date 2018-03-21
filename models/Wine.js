@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const wineSchema = new Schema({
-  id: Number,
+  catagory: { type: String, require: true },
   grape: { type: String, require: true },
   name: { type: String, require: true },
   producer: { type: String, require: true },

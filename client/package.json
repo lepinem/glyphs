@@ -5,17 +5,28 @@
   "proxy": {
     "/auth/google": {
       "target": "http://localhost:5000"
+    },
+    "/api/*": {
+      "target": "http://localhost:5000"
     }
   },
   "dependencies": {
+    "ajv": "^6.2.1",
+    "axios": "^0.18.0",
+    "history": "^4.7.2",
     "jest": "^22.4.2",
+    "materialize-css": "^0.100.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-materialize": "^2.1.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
-    "redux": "^3.7.2"
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "tether": "^1.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
